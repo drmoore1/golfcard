@@ -6,15 +6,15 @@ namespace golfcard.Models
 {
   class Course
   {
-    public Course(string courseName, string courseAddress, int holeNumber, int par, int distance)
+
+    public Course(string courseName, string courseAddress, int h1num, int h1par, int h1dis)
     {
       CourseName = courseName;
       CourseAddress = courseAddress;
-      Hole1 = Hole(int holeNumber, int par, int distance);
-
-
-
+      Hole1 = new Hole(h1num, h1par, h1dis);
     }
+    //List of all Properties
+    #region Properties 
     public string CourseName { get; set; }
     public string CourseAddress { get; set; }
 
@@ -36,13 +36,7 @@ namespace golfcard.Models
     public Hole Hole16 { get; set; }
     public Hole Hole17 { get; set; }
     public Hole Hole18 { get; set; }
-
-
-
-
-
-
-
+    #endregion
   }
 
 }

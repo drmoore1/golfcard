@@ -8,9 +8,9 @@ namespace golfcard.Models
     public int Distance { get; set; }
 
 
-    public Hole(int holeNumber, int par, int distance)
+    public Hole(int holeNum, int par, int distance)
     {
-      HoleNumber = holeNumber;
+      HoleNumber = holeNum;
       Par = par;
       Distance = distance;
     }
